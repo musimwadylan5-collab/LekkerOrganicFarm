@@ -51,7 +51,6 @@ Lekker Organic Farm Website
 │
 ├── Products (products.html)
 │     ├── Vegetables
-│     ├── Poultry
 │     ├── Dairy
 │     └── Bulk Order Information
 │
@@ -81,7 +80,7 @@ Key dates include:
 - **14 April 2026:** Created initial project structure  
 - **15 April 2026:** Added HTML skeleton pages  
 - **15 April 2026:** Added sitemap and README.md 
-- **28 April 2026** Created github repository and added images. 
+- **28 April 2026:** linked  github repository and added images. 
 
 ---
 
@@ -97,6 +96,7 @@ Key dates include:
 -unsplash. (2019). unsplash. Retrieved from unsplash.com: https://unsplash.com/images
 
 
+ 
  
 
 ---
