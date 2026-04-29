@@ -1,0 +1,83 @@
+Lekker Organic Farm has no pre-existing website
+The organisation has no digital presence and social media
+Sources of images:
+https://www.freepik.com/
+https://unsplash.com/
+Sources of fonts:
+https://www.fints.google.com/
+Products
+Plant Produce Descriptions
+Seasonal Veggie Box (5kg)
+Description: Our signature harvest box is a hand-picked selection of what is currently peaking in our Meyerton fields. From earthy root vegetables to crisp seasonal favourites, this 5kg box is designed to provide a week's worth of nutrition for a small family. No pesticides, no wax, just honest dirt-to-table goodness.
+
+Best For: Families looking for a healthy variety of chemical-free greens.
+
+Bulk Spinach & Kale
+Description: Harvested every morning at sunrise, our leafy greens are famous for their deep colour and robust flavour. We grow our spinach and kale in nutrient-rich compost, ensuring every bunch is packed with iron and vitamins.
+
+Pro-Tip: Perfect for hearty South African stews or your morning green smoothie.
+
+Dairy Product Descriptions
+Fresh Farm Milk (2 Litres)
+Description: This isn't your average store-bought milk. Our dairy comes from a small, happy herd that grazes on natural Gauteng pastures. Our milk is minimally processed to retain its natural creamy texture and rich vitamin profile. It's the way milk used to taste—pure, cold, and fresh.
+
+Quality Guarantee: Antibiotic-free and hormone-free.
+
+Hand-Churned Butter (250g)
+Description: Made the old-fashioned way. We take our high-fat farm cream and hand-churn it until it reaches a perfect, spreadable consistency. Our butter has a distinct golden hue because our cows eat real grass.
+
+Serving Suggestion: Best enjoyed melted over a slice of warm, toasted sourdough or used to add a rich flavour to your home cooking.
+About page
+Our History (The Roots)
+Lekker Organic Farm began in 2012 with a simple mission: to heal the soil and feed the soul. What started as a small family vegetable patch in Meyerton has grown into a leading local producer of organic plant produce and fresh dairy. We realized that the community was hungry for food that wasn't treated with harsh chemicals or travelled thousands of kilometres to reach the shelf.
+
+Our Philosophy (The Heart)
+We operate on the principle of Ubuntu—I am because we are. We believe that if we look after the earth (umhlaba), the earth will look after us. Our farming methods focus on:
+
+Soil Health: Using natural compost and crop rotation instead of synthetic fertilizers.
+
+Animal Welfare: Our dairy herd is small, grass-fed, and treated with the respect they deserve.
+
+Sustainability: Reducing our carbon footprint by selling directly to our neighbours in Gauteng.
+
+Our Mission
+To provide the freshest, most nutrient-dense organic produce and dairy in the Vaal Triangle while educating our community on the importance of sustainable living.
+
+---
+
+Research Summary: Lekker Organic Farm
+Date: April 2026  
+Project: Web Presence Development (Phase 1)
+
+1. Organisation Overview & Gap Analysis
+Current Status: Lekker Organic Farm (Meyerton, Gauteng) currently operates with **no digital presence**.
+The Gap: There is no existing website, social media, or digital brand identity.
+The Solution: Development of a 5-page responsive website to establish local trust and facilitate orders for plant produce and dairy.
+
+2. Target Audience & Tone
+Primary Audience: Health-conscious families and local residents in the Vaal Triangle/Meyerton area.
+Tone of Voice: Transparent, community-focused (using *Ubuntu* philosophy), and "Lekker" (approachable/local South African energy).
+
+3. Asset Sourcing Registry
+To comply with copyright and professional standards, the following sources have been identified for all non-original assets:
+
+
+4. Content Inventory (Original Content)
+Home Page: Focuses on the Hero visual and a "Call to Action" to drive product sales.
+About Page: Details the 2012 founding story and the *Ubuntu* farming philosophy.
+Products Page: Strictly limited to Plant Produce and Dairy products
+Contact/Enquiry: Designed to capture user intent (Order vs. General Question).
+
+5. SEO & Discoverability
+
+Primary Keywords: Organic farm Meyerton, Fresh dairy Gauteng, Chemical-free vegetables Vaal, Farm-to-table South Africa.
+
+Location Strategy: Highlighting the Meyerton roots to appeal to local "Support Small Business" trends.
+
+6. File Naming Conventions (Systematic Organisation)
+
+logo.png - Branding
+hero.jpg - Visual 
+index.html, about.html, products.html, contact.html, enquries.html - Core Structure 
+
+
