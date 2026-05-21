@@ -1,0 +1,101 @@
+/* ==========================================================================
+   1. DESIGN TOKENS & VARIABLES
+   ========================================================================== */
+:root {
+    --primary-green: #4a7c59;
+    --accent-brown: #8c5e3c;
+    --bg-cream: #f7f4f2;
+    --text-dark: #2d2d2d;
+    --text-light: #ffffff;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+/* ==========================================================================
+   2. GLOBAL RESET & BASE STYLES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+/* ==========================================================================
+   4. HEADER & NAVIGATION STYLES (With .headnav elements)
+   ========================================================================== */
+
+/* Outer Container: The overall bar running across the top of the screen */
+header.headnav {
+    background-color: var(--primary-green); /* Organic Green background */
+    color: var(--text-light);
+    padding: 1rem 2rem;
+    position: sticky;        /* Keeps the menu pinned at the top when scrolling */
+    top: 0;
+    z-index: 1000;          /* Keeps it layered above all other content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Professional depth effect */
+}
+
+/* Inner Container: Holds and spaces your links/branding across the width */
+nav.headnav {
+    display: flex;
+    justify-content: space-between; /* Pushes content to opposite sides */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;         /* Centers the navigation box inside the header */
+}
+
+/* Typography styles for any heading/branding inside the header */
+header.headnav h1 {
+    font-family: var(--font-heading);
+    color: var(--text-light); /* Overrides green heading color to show on header */
+    font-size: 1.5rem;
+    margin-bottom: 0;        /* Removes default bottom margin so it aligns cleanly */
+}
+
+/* The Navigation Links Container */
+nav.headnav a {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Smooth fade effect for hovers */
+}
+
+/* Hover effect: Subtle background change using your Earthy Accent color */
+nav.headnav a:hover {
+    background-color: var(--accent-brown);
+    color: var(--text-light);
+}
+
+/* Active Page Style: Gives the user a permanent indication of their current page */
+nav.headnav a.active {
+    background-color: var(--accent-brown);
+    font-weight: 700;
+}
