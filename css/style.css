@@ -45,57 +45,706 @@ img {
     display: block;
 }
 /* ==========================================================================
-   4. HEADER & NAVIGATION STYLES (With .headnav elements)
+   4. HEADER & NAVIGATION STYLES (Targeting Specific Class Matching)
    ========================================================================== */
 
-/* Outer Container: The overall bar running across the top of the screen */
+/* Target ONLY the structural header bar container */
 header.headnav {
-    background-color: var(--primary-green); /* Organic Green background */
+    background-color: var(--primary-green);
     color: var(--text-light);
-    padding: 1rem 2rem;
-    position: sticky;        /* Keeps the menu pinned at the top when scrolling */
+    padding: 1.2rem 2rem;
+    position: sticky;
     top: 0;
-    z-index: 1000;          /* Keeps it layered above all other content */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Professional depth effect */
-}
-
-/* Inner Container: Holds and spaces your links/branding across the width */
-nav.headnav {
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    
+    /* Neatly arranges the Logo box, H1 Title, and Nav Menu in a single row */
     display: flex;
-    justify-content: space-between; /* Pushes content to opposite sides */
+    justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;         /* Centers the navigation box inside the header */
 }
 
-/* Typography styles for any heading/branding inside the header */
+/* Ensure the main brand text title uses crisp alignment inside the flex row */
 header.headnav h1 {
     font-family: var(--font-heading);
-    color: var(--text-light); /* Overrides green heading color to show on header */
-    font-size: 1.5rem;
-    margin-bottom: 0;        /* Removes default bottom margin so it aligns cleanly */
+    font-size: 1.7rem;
+    margin: 0;
+    color: var(--text-light);
+    text-align: center;
+    flex: 1; /* Allows the title text to sit comfortably in the middle space */
 }
 
-/* The Navigation Links Container */
+/* Target ONLY the inner navigation menu wrapper */
+nav.headnav {
+    display: flex;
+    gap: 1.5rem; /* Evenly spaces your 5 menu links horizontally */
+    background: transparent; /* Overrides accidental double backgrounds */
+    padding: 0;              /* Overrides accidental double padding */
+    box-shadow: none;        /* Overrides any inherited container shadows */
+}
+
+/* Individual navigation link formatting */
 nav.headnav a {
+    color: var(--text-light);
+    text-decoration: none;
     font-family: var(--font-heading);
     font-weight: 600;
-    font-size: 0.95rem;
-    color: var(--text-light);
-    padding: 0.5rem 1rem;
-    margin-left: 0.5rem;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 4px;
-    transition: all 0.3s ease; /* Smooth fade effect for hovers */
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Hover effect: Subtle background change using your Earthy Accent color */
-nav.headnav a:hover {
+/* Interactive link hover states */
+nav.headnav a:hover,
+nav.headnav a.active {
+    color: var(--accent-brown);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Clean containment framework for your live logo asset */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#farm-logo {
+    height: 45px; /* Keeps the brand asset perfectly inline with text heights */
+    width: auto;  /* Locks structural aspect ratio proportions */
+    object-fit: contain;
+}
+/* ==========================================================================
+   5. HERO SECTION STYLES
+   ========================================================================== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h2 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    color: var(--primary-green);
+    margin-bottom: 1.2rem;
+}
+
+.hero-content p {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+}
+
+/* Styles for the image container box */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e1dc; /* Clean placeholder color until asset is loaded */
+    border: 2px dashed var(--accent-brown);
+    border-radius: 8px;
+    min-height: 350px;
+}
+
+/* Informative text inside the asset container until your image tag is uncommented */
+.hero-image::after {
+    content: "Hero Image Block (images/hero.jpg)";
+    font-family: var(--font-heading);
+    color: var(--accent-brown);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   6. INTRODUCTION SECTION STYLES
+   ========================================================================== */
+#intro {
+    background-color: var(--text-light);
+    padding: 4rem 2rem;
+    text-align: center;
+    border-top: 1px solid #eae5e2;
+    border-bottom: 1px solid #eae5e2;
+}
+
+#intro h2 {
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+#intro p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+}
+
+/* ==========================================================================
+   7. INITIAL RESPONSIVE MEDIA QUERIES (Mobile Viewports)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stacks text above the image on mobile */
+        text-align: center;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-image {
+        width: 100%;
+        min-height: 250px;
+    }
+}
+/* ==========================================================================
+   8. PAGE BANNER & CARD LAYOUT STYLES
+   ========================================================================== */
+.page-title-section {
+    background-color: #eae5e2;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-bottom: 1px solid #ddd7d2;
+}
+
+.page-title-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+.about-container, .product-item {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.about-card {
+    background-color: var(--text-light);
+    padding: 2rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.styled-list {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.styled-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+/* Custom bullet indicator replacing standard browser layout styling */
+.styled-list li::before {
+    content: "✔";
+    color: var(--primary-green);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   9. PRICE TABLE STYLES (products.html)
+   ========================================================================== */
+.price-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-color: var(--text-light);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.price-table th, .price-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+}
+
+.price-table th {
+    background-color: var(--primary-green);
+    color: var(--text-light);
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.price-table tr {
+    border-bottom: 1px solid #eee;
+}
+
+/* Alternating row colors for professional visual structure */
+.price-table tr:nth-child(even) {
+    background-color: #fcfbfa;
+}
+
+/* ==========================================================================
+   10. USER ACCESSIBLE FORM STYLES (enquiry.html & contact.html)
+   ========================================================================== */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: var(--text-light);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+form label {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    display: inline-block;
+    margin-bottom: 0.4rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    outline: none;
+    border-color: var(--primary-green);
+}
+
+form button[type="submit"] {
     background-color: var(--accent-brown);
     color: var(--text-light);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
-/* Active Page Style: Gives the user a permanent indication of their current page */
-nav.headnav a.active {
-    background-color: var(--accent-brown);
+form button[type="submit"]:hover {
+    background-color: #724b2e;
+}
+/* ==========================================================================
+   11. PRODUCTS PAGE STYLES (products.html)
+   ========================================================================== */
+main section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+main section h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+}
+
+main section h3 {
+    font-size: 1.6rem;
+    color: var(--accent-brown);
+    border-left: 4px solid var(--primary-green);
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--text-light);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    margin-bottom: 2.5rem;
+    gap: 3rem;
+}
+
+.product-text {
+    flex: 1.2;
+}
+
+.product-text h4 {
+    font-size: 1.3rem;
+    color: var(--primary-green);
+    margin-bottom: 0.5rem;
+}
+
+.product-text p {
+    text-align: left;
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+}
+
+.product-img-placeholder {
+    flex: 0.8;
+    background-color: #e6e1dc;
+    border: 2px dashed #b5ada7;
+    border-radius: 6px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-heading);
+    color: var(--accent-brown);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   12. PRODUCE & DAIRY PRICE TABLE STYLES
+   ========================================================================== */
+.price-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 3rem auto;
+    border-collapse: collapse;
+    background-color: var(--text-light);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.price-table th, 
+.price-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+}
+
+.price-table th {
+    background-color: var(--primary-green);
+    color: var(--text-light);
+    font-family: var(--font-heading);
     font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.price-table tr {
+    border-bottom: 1px solid #eae5e2;
+}
+
+.price-table tr:nth-child(even) {
+    background-color: #fdfcfb;
+}
+
+.price-table tr:hover {
+    background-color: #f7f4f2;
+}
+
+.products-cta-box {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    border-top: 1px solid #eae5e2;
+}
+
+.products-cta-box a {
+    display: inline-block;
+    background-color: var(--primary-green);
+    color: var(--text-light);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.products-cta-box a:hover {
+    background-color: var(--accent-brown);
+    transform: translateY(-2px);
+}
+/* ==========================================================================
+   13. ABOUT PAGE STYLES (about.html)
+   ========================================================================== */
+
+/* Main layout container for the About page content */
+.about-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+/* Introduction paragraph emphasis */
+#about-intro {
+    background-color: var(--text-light);
+    padding: 2.5rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    border-left: 5px solid var(--primary-green);
+}
+
+#about-intro p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--text-dark);
+}
+
+/* Individual Content Cards (History, Mission, Vision) */
+.about-card {
+    background-color: var(--text-light);
+    padding: 2.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-3px);
+}
+
+.about-card h3 {
+    font-size: 1.4rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+    border-bottom: 2px solid var(--bg-cream);
+    padding-bottom: 0.5rem;
+}
+
+/* Sustainable Highlights List Customisation */
+.about-card.highlights {
+    border-top: 4px solid var(--accent-brown);
+}
+
+.styled-list {
+    list-style-type: none; /* Removes standard browser bullet layout */
+    padding-left: 0;
+}
+
+.styled-list li {
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
+    padding-left: 2rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+/* Elegant custom checkmark bullet replacement using design tokens */
+.styled-list li::before {
+    content: "✔";
+    color: var(--primary-green);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* Summary text block at the base of the page */
+.about-summary {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    background-color: var(--accent-brown);
+    color: var(--text-light);
+    border-radius: 8px;
+}
+
+.about-summary p {
+    font-size: 1.2rem;
+    font-family: var(--font-heading);
+    font-weight: 600;
+}
+/* ==========================================================================
+   14. CONTACT PAGE LAYOUT STYLES (contact.html)
+   ========================================================================== */
+
+/* Split layout row separating details from the form */
+.contact-grid-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    gap: 4rem;
+}
+
+/* Left Sidebar containing company details */
+.contact-sidebar {
+    flex: 1;
+}
+
+.contact-block {
+    background-color: var(--text-light);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.contact-block h3 {
+    font-size: 1.3rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+}
+
+.contact-block p, 
+.contact-block ul {
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.contact-block ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-block ul li {
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px dashed #eae5e2;
+}
+
+/* Right content block containing the form wrapper */
+.contact-form-column {
+    flex: 1.2;
+}
+
+/* ==========================================================================
+   15. MAP LOCATION PLACEHOLDERS (contact.html)
+   ========================================================================== */
+.maps-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.maps-section h3 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+/* Side-by-side mapping layout container */
+.maps-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.map-placeholder {
+    flex: 1;
+    background-color: #e6e1dc;
+    border: 2px dashed #b5ada7;
+    border-radius: 8px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.map-placeholder::before {
+    content: "🗺️";
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.map-placeholder span {
+    font-family: var(--font-heading);
+    color: var(--accent-brown);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.map-placeholder p {
+    font-size: 0.85rem;
+    color: #7a736d;
+    margin-top: 0.4rem;
+}
+/* ==========================================================================
+   16.Finalizing the Global Mobile Responsive Queries
+   ========================================================================== */
+/* About Page Mobile Reflows */
+    #about-intro, .about-card {
+        padding: 1.5rem;
+    }
+
+    /* Contact Page Layout Stacking */
+    .contact-grid-wrapper {
+        flex-direction: column; /* Collapses details layout into a singular column */
+        gap: 2rem;
+        padding: 0 1.5rem;
+    }
+
+    .maps-container {
+        flex-direction: column; /* Places map boxes vertically on mobile viewports */
+        gap: 1.5rem;
+    }
+
+    .map-placeholder {
+        min-height: 200px;
+    }
+    /* Header Mobile Reflow Stacking */
+    header.headnav {
+        flex-direction: column; /* Switches from row layout to a clean vertical column stack */
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+
+    header.headnav h1 {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+
+    nav.headnav {
+        flex-wrap: wrap; /* Allows your 5 links to wrap safely onto a second line if needed */
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    nav.headnav a {
+        font-size: 0.95rem;
+        padding: 0.3rem 0.6rem;
+    }
+    /* ==========================================================================
+   17. GLOBAL FOOTER STYLES
+   ========================================================================== */
+footer {
+    background-color: var(--text-dark);
+    color: #a5a09b; /* Subtle muted text color for a sleek contrast */
+    text-align: center;
+    padding: 1.5rem 2rem;
+    font-size: 0.9rem;
+    font-family: var(--font-heading);
+    border-top: 3px solid var(--accent-brown);
+    margin-top: auto; /* Pushes footer down on shorter pages */
 }
