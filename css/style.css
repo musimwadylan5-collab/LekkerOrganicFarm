@@ -58,7 +58,7 @@ header.headnav {
     z-index: 1000;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     
-    /* Neatly arranges the Logo box, H1 Title, and Nav Menu in a single row */
+    /*  arranges the Logo box, H1 Title, and Nav Menu in a single row */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,7 +102,7 @@ nav.headnav a.active {
     background-color: rgba(255, 255, 255, 0.08);
 }
 
-/* Clean containment framework for your live logo asset */
+/* Clean containment framework for live logo asset */
 .logo-container {
     display: flex;
     align-items: center;
@@ -148,15 +148,14 @@ nav.headnav a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e6e1dc; /* Clean placeholder color until asset is loaded */
+    background-color: #8c5e3c; /* Clean colour to fill in the excess space */
     border: 2px dashed var(--accent-brown);
     border-radius: 8px;
     min-height: 350px;
 }
 
-/* Informative text inside the asset container until your image tag is uncommented */
+/* Informative text inside the asset container until image tag is uncommented */
 .hero-image::after {
-    content: "Hero Image Block (images/hero.jpg)";
     font-family: var(--font-heading);
     color: var(--accent-brown);
     font-weight: 600;
