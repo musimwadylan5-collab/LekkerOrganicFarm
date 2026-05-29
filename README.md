@@ -67,7 +67,6 @@ Lekker Organic Farm Website
 ---
 
 ## Timeline & Milestones
-Refer to the approved proposal document for the full milestone breakdown.  
 Key dates include:
 - **14 April 2026:** Project initiation  
 - **20 April 2026:** Part 1 submission  
@@ -77,26 +76,51 @@ Key dates include:
 ---
 
 ## Changelog
-- **14 April 2026:** Created initial project structure  
-- **15 April 2026:** Added HTML skeleton pages  
-- **15 April 2026:** Added sitemap and README.md 
-- **28 April 2026:** linked  github repository and added images. 
 
+14 April 2026: Initial commit and project setup.
+
+15 April 2026: Created project files for Part 1, establishing the final website skeleton, basic page layouts, and text formatting.
+
+16 April 2026: Added project documentation, including the site map and content research files, alongside media assets (dairy.jpg).
+
+21 May 2026: Fixed layout bugs and resolved initial repository link challenges.
+
+22 May 2026: Created the global CSS template, integrated Google Fonts across all pages, and standardized header and navigation bar consistency.
+
+23 May 2026: Added images and implemented advanced CSS layout structures to address initial alignment and mobile responsiveness challenges.
+
+24 May 2026: Updated the header layout, refined the logo image integration in index.html, and cleaned up CSS comments for code clarity.
+
+29 May 2026: Polished the readme.me file and fixed all refrences. Checked for responsiveness across multiple devices and attached evidence.
 ---
 
+## Device Responsiveness
+
+## Desktop view
+![Desktop View](images/Screenshots/Desktop.png)
+## Mobile view
+![Mobile view on iPhone 11](<images/Screenshots/iphone 11.jpeg>)
+![Mobile on Samsung Galaxy S26 Ultra](<images/Screenshots/android mobile.jpeg>)
+## Tablet view
+![View on Ipad Pro](<images/Screenshots/Ipad pro.png>)
+
 ## References
--anon. (2025). #4a7c59 color-hex. Retrieved from colorh-hex: https://www.color-hex.com/color/4a7c59
--anon. (2025). #8c5e3c color-hex. Retrieved from color-hex.com: https://www.color-hex.com/color/8c5e3c
--anon. (2025). #f7f4f2 color-hex. Retrieved from color-hex.com: https://www.color-hex.com/color/f7f5f2
--anon. (2025). color-hex. Retrieved from color-hex.com: https://www.color-hex.com/
--anon. (n.d.). search fonts. Retrieved from google fonts: https://fonts.google.com/
--freepik. (2025). free pik. Retrieved from freepik.com: https://www.freepik.com/
--google. (2019). Montserrat. Retrieved from google fonts: https://fonts.google.com/specimen/Montserrat
--google. (2019). open-sans. Retrieved from google fonts: https://fonts.google.com/specimen/Open+Sans
--unsplash. (2019). unsplash. Retrieved from unsplash.com: https://unsplash.com/images
+Color-Hex, 2025. #4a7c59 color-hex. Color-Hex, [online] Available at: https://www.color-hex.com/color/4a7c59 [Accessed 29 May 2026].
 
+Color-Hex, 2025. #8c5e3c color-hex. Color-Hex, [online] Available at: https://www.color-hex.com/color/8c5e3c [Accessed 29 May 2026].
 
+Color-Hex, 2025. #f7f4f2 color-hex. Color-Hex, [online] Available at: https://www.color-hex.com/color/f7f5f2 [Accessed 29 May 2026].
+
+Color-Hex, 2025. Color-hex color palettes. Color-Hex, [online] Available at: https://www.color-hex.com/ [Accessed 29 May 2026].
+
+Freepik, 2025. Free vectors, stock photos and psd. Freepik, [online] Available at: https://www.freepik.com/ [Accessed 29 May 2026].
+
+Google Fonts, 2019. Montserrat font specimen. Google Fonts, [online font] Available at: https://fonts.google.com/specimen/Montserrat [Accessed 29 May 2026].
+
+Google Fonts, 2019. Open Sans font specimen. Google Fonts, [online font] Available at: https://fonts.google.com/specimen/Open+Sans [Accessed 29 May 2026].
+
+Google Fonts, n.d. Search fonts portal. Google Fonts, [online font] Available at: https://fonts.google.com/ [Accessed 29 May 2026].
+
+Unsplash, 2019. Unsplash photography library. Unsplash, [image online] Available at: https://unsplash.com/images [Accessed 29 May 2026].
  
- 
-
 ---

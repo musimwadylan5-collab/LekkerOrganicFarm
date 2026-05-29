@@ -718,8 +718,7 @@ main section h3 {
         padding: 1.5rem 1rem;
         text-align: center;
     }
-
-    header.headnav h1 {
+header.headnav h1 {
         font-size: 1.5rem;
         margin: 0.5rem 0;
     }
