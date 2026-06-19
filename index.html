@@ -2,15 +2,73 @@
 <html lang="en">
 
 <head>
+    <!-- SEO: Meta Tags and Title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lekker Organic Farm | Home</title>
+    <title>Lekker Organic Farm | Organic Vegetables & Dairy Products in Meyerton</title>
+    <meta name="description" content="Discover Lekker Organic Farm - premium organic vegetables, fresh dairy products, and homemade goods. Free delivery within 50km of Meyerton, Gauteng. Shop fresh, healthy organic produce today.">
+    <meta name="keywords" content="organic farm, organic vegetables, dairy products, organic milk, fresh produce, local farm, Meyerton, organic farming, sustainable agriculture">
+    <meta name="author" content="Lekker Organic Farm">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta property="og:title" content="Lekker Organic Farm | Premium Organic Products">
+    <meta property="og:description" content="Shop organic vegetables and dairy products from our sustainable farm. Free delivery within 50km.">
+    <meta property="og:image" content="images/farm-hero.jpg">
+    <meta property="og:url" content="https://www.lekkerorganicfarm.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lekker Organic Farm">
+    <meta name="twitter:description" content="Premium organic vegetables and dairy products">
+    <meta name="twitter:image" content="images/farm-hero.jpg">
+    
+    <!-- SEO: Structured Data (JSON-LD) for Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Lekker Organic Farm",
+        "description": "Organic vegetables and dairy products farm",
+        "image": "images/farm-hero.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Farm Road",
+            "addressLocality": "Meyerton",
+            "addressRegion": "Gauteng",
+            "postalCode": "1960",
+            "addressCountry": "ZA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-26.2344",
+            "longitude": "28.5014"
+        },
+        "telephone": "+27-phone-number",
+        "email": "info@lekkerorganicfarm.com",
+        "priceRange": "R",
+        "sameAs": [
+            "https://www.facebook.com/lekkerorganicfarm",
+            "https://www.instagram.com/lekkerorganicfarm"
+        ]
+    }
+    </script>
+    
+    <!-- SEO: Canonical Tag -->
+    <link rel="canonical" href="https://www.lekkerorganicfarm.com">
+    
+    <!-- SEO: Alternate Hreflang (for multilingual support) -->
+    <link rel="alternate" hreflang="en" href="https://www.lekkerorganicfarm.com">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
+    <!-- jQuery for interactive elements -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <!-- Leaflet CSS for maps -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 </head>
 
 <body>
@@ -24,6 +82,7 @@
             <a href="index.html" class="active">Home</a>
             <a href="about.html">About Us</a>
             <a href="products.html">Products</a>
+            <a href="events.html">Events</a>
             <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -60,18 +119,207 @@
             </div>
         </section>
 
+        <!-- FAQ Accordion Section -->
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>How do you ensure organic certification?</span>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We follow strict organic farming protocols approved by international certification bodies. Our practices include crop rotation, natural pest control, and zero synthetic inputs. All our products are regularly tested for residues.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>What are your delivery options?</span>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We offer local delivery within a 50km radius of Meyerton, weekly box subscriptions, and direct pickup from our farm. For larger orders, we can arrange special delivery schedules.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Are seasonal variations normal?</span>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, we celebrate the seasons! Our produce varies throughout the year based on what nature provides. This ensures peak freshness and flavor. Check our enquiry form for current availability.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Can I visit the farm?</span>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Absolutely! We welcome farm visits by appointment. You can see our sustainable practices firsthand and meet the team. Contact us to schedule your visit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Tabs Section -->
+        <section id="product-tabs">
+            <h2>Our Product Categories</h2>
+            <div class="tabs-container">
+                <div class="tabs-nav">
+                    <button class="tab-button active" data-tab="vegetables">Vegetables</button>
+                    <button class="tab-button" data-tab="dairy">Dairy</button>
+                    <button class="tab-button" data-tab="bundles">Bundle Offers</button>
+                </div>
+                <div class="tabs-content">
+                    <div id="vegetables" class="tab-pane active">
+                        <div class="tab-grid">
+                            <div class="tab-item">
+                                <h4>Leafy Greens</h4>
+                                <p>Fresh spinach, kale, and lettuce grown with organic methods.</p>
+                            </div>
+                            <div class="tab-item">
+                                <h4>Root Vegetables</h4>
+                                <p>Carrots, beets, and potatoes harvested at peak nutrition.</p>
+                            </div>
+                            <div class="tab-item">
+                                <h4>Seasonal Specials</h4>
+                                <p>Tomatoes, cucumbers, and peppers in season.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="dairy" class="tab-pane">
+                        <div class="tab-grid">
+                            <div class="tab-item">
+                                <h4>Fresh Milk</h4>
+                                <p>Raw and pasteurized milk from grass-fed cows. Available weekly.</p>
+                            </div>
+                            <div class="tab-item">
+                                <h4>Hand-Churned Butter</h4>
+                                <p>Rich, creamy butter with natural flavor. Perfect for cooking and baking.</p>
+                            </div>
+                            <div class="tab-item">
+                                <h4>Specialty Dairy</h4>
+                                <p>Seasonal yogurt and cheese products available on request.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bundles" class="tab-pane">
+                        <div class="tab-grid">
+                            <div class="tab-item">
+                                <h4>Weekly Veggie Box</h4>
+                                <p>5kg of seasonal vegetables delivered every week.</p>
+                            </div>
+                            <div class="tab-item">
+                                <h4>Dairy & Produce Bundle</h4>
+                                <p>Vegetables plus fresh milk and butter monthly package.</p>
+                            </div>
+                            <div class="tab-item">
+                                <h4>Premium Combo</h4>
+                                <p>Our best-selling mix of seasonal produce and dairy items.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="cta">
             <h2>Ready to eat healthy?</h2>
             <p>Check out our full range of products or get in touch with us today!</p>
             <a href="products.html" class="cta-button">View Products</a>
             <a href="contact.html" class="cta-button-secondary">Contact Us</a>
         </section>
+
+        <!-- Gallery Section with Lightbox -->
+        <section id="gallery">
+            <h2>Farm Gallery</h2>
+            <p class="gallery-intro">Experience the beauty of organic farming at Lekker Farm</p>
+            <div class="gallery-grid">
+                <a href="https://via.placeholder.com/600x400?text=Farm+Field" data-lightbox="farm-gallery" data-title="Lush organic vegetable field">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300x200?text=Farm+Field" alt="Vegetable field">
+                        <div class="gallery-overlay">
+                            <span>🔍 View</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://via.placeholder.com/600x400?text=Fresh+Dairy" data-lightbox="farm-gallery" data-title="Fresh dairy products">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300x200?text=Fresh+Dairy" alt="Fresh dairy">
+                        <div class="gallery-overlay">
+                            <span>🔍 View</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://via.placeholder.com/600x400?text=Harvest+Time" data-lightbox="farm-gallery" data-title="Harvest time at the farm">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300x200?text=Harvest+Time" alt="Harvest">
+                        <div class="gallery-overlay">
+                            <span>🔍 View</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://via.placeholder.com/600x400?text=Sustainability" data-lightbox="farm-gallery" data-title="Sustainable farming practices">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300x200?text=Sustainability" alt="Sustainability">
+                        <div class="gallery-overlay">
+                            <span>🔍 View</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://via.placeholder.com/600x400?text=Dairy+Unit" data-lightbox="farm-gallery" data-title="Our dairy production unit">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300x200?text=Dairy+Unit" alt="Dairy unit">
+                        <div class="gallery-overlay">
+                            <span>🔍 View</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://via.placeholder.com/600x400?text=Farm+Team" data-lightbox="farm-gallery" data-title="Meet our passionate farm team">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300x200?text=Farm+Team" alt="Team">
+                        <div class="gallery-overlay">
+                            <span>🔍 View</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Modal Button -->
+        <section id="modal-section">
+            <button id="openModalBtn" class="modal-button">Learn More About Our Farm</button>
+        </section>
+
+        <!-- Modal -->
+        <div id="farmModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Lekker Organic Farm - Our Story</h2>
+                <p>Since 2012, we've been committed to sustainable, organic farming in the heart of Meyerton, Gauteng. Our farm is built on principles of environmental responsibility and community wellness.</p>
+                <h3>What Makes Us Different</h3>
+                <ul>
+                    <li>100% chemical-free farming practices</li>
+                    <li>Community-focused sustainable agriculture</li>
+                    <li>Direct-to-customer delivery for maximum freshness</li>
+                    <li>Support for local economy and employment</li>
+                </ul>
+                <button id="closeModalBtn" class="modal-button-secondary">Close</button>
+            </div>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2026 Lekker Organic Farm | Meyerton, Gauteng</p>
     </footer>
 
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/lightbox.min.js"></script>
+    <!-- Leaflet JS for maps -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <!-- Custom Interactive Elements Script -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

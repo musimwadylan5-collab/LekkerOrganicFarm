@@ -1,0 +1,67 @@
+# Lekker Organic Farm - robots.txt
+# This file instructs search engine crawlers which pages to index and which to exclude
+# Last updated: 2026-06-18
+
+# ============================================================================
+# SECTION 3.3: Additional SEO Requests - robots.txt Configuration
+# ============================================================================
+# Purpose: Tell search engines (Google, Bing, DuckDuckGo, etc.) which pages 
+# to crawl and which to exclude. This improves crawl efficiency and prevents
+# indexing of duplicate or private pages.
+# ============================================================================
+
+# Allow all search engines to crawl the website
+User-agent: *
+Allow: /
+
+# Disallow crawling of private or temporary pages (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /test/
+Disallow: /backup/
+Disallow: /logs/
+
+# Disallow crawling of specific file types that don't need indexing
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.xls$
+
+# Set crawl delay for respectful crawling (in seconds)
+Crawl-delay: 1
+
+# ============================================================================
+# Specific rules for major search engines
+# ============================================================================
+
+# Google-specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+# Bing-specific rules
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# DuckDuckGo-specific rules
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# ============================================================================
+# Sitemap locations for search engines
+# ============================================================================
+# This tells search engines where to find your sitemap for better indexing
+Sitemap: https://www.lekkerorganicfarm.com/sitemap.xml
+Sitemap: https://www.lekkerorganicfarm.com/sitemap-products.xml
+Sitemap: https://www.lekkerorganicfarm.com/sitemap-events.xml
+
+# ============================================================================
+# IMPLEMENTATION NOTES:
+# - Place this file in the root directory of your website
+# - Ensure it's accessible at: https://www.lekkerorganicfarm.com/robots.txt
+# - Update domain names if you move to a different host
+# - Add new Disallow rules as you add new private pages
+# - Monitor crawl stats in Google Search Console to ensure proper crawling
+# ============================================================================

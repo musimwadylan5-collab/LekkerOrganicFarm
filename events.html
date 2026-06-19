@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- SEO: Meta Tags and Title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Blog | Farm Workshops & Updates | Lekker Organic Farm</title>
+    <meta name="description" content="Discover upcoming farm events, workshops, and blog posts about organic farming. Join us for farm tours, educational workshops, and community events at Lekker Organic Farm.">
+    <meta name="keywords" content="farm events, organic workshops, farm tours, blog, community events, educational workshops, farm updates">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Events & Blog | Lekker Organic Farm">
+    <meta property="og:description" content="Upcoming events and workshop at our organic farm">
+    <meta property="og:url" content="https://www.lekkerorganicfarm.com/events.html">
+    <meta property="og:type" content="website">
+    
+    <!-- SEO: Structured Data (JSON-LD) for Events Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EventSeries",
+        "name": "Lekker Organic Farm Events",
+        "url": "https://www.lekkerorganicfarm.com/events.html",
+        "description": "Series of educational events and workshops at Lekker Organic Farm"
+    }
+    </script>
+    
+    <!-- SEO: Canonical Tag -->
+    <link rel="canonical" href="https://www.lekkerorganicfarm.com/events.html">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- jQuery for interactive elements -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <header class="headnav">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Lekker Organic Farm Logo" id="farm-logo">
+        </div>
+        <h1>Lekker Organic Farm</h1>
+        <nav class="headnav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="page-title-section">
+        <h2>Events & Blog</h2>
+    </section>
+
+    <main>
+        <section>
+            <h2>Farm Events & Updates</h2>
+            <p>
+                Stay connected with Lekker Organic Farm. Discover upcoming events, workshops, 
+                and read our latest blog posts about sustainable farming and organic living.
+            </p>
+        </section>
+
+        <!-- Dynamic Event Search and Filter Section -->
+        <section>
+            <div class="search-filter-container">
+                <div class="search-field">
+                    <label for="eventSearch">Search Events:</label>
+                    <input type="text" id="eventSearch" placeholder="Search by event name, description...">
+                </div>
+                <div class="filter-field">
+                    <label for="eventFilter">Event Type:</label>
+                    <select id="eventFilter">
+                        <option value="">All Types</option>
+                        <option value="events">Events</option>
+                        <option value="workshop">Workshops</option>
+                        <option value="blog">Blog Posts</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Dynamic Event Container - Events loaded by JavaScript -->
+            <div id="dynamicEventContainer"></div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section style="background-color: #f7f4f2; padding: 3rem 2rem; margin: 3rem 0; border-radius: 8px;">
+            <h2 style="text-align: center;">Stay Updated</h2>
+            <p style="text-align: center; max-width: 600px; margin: 1rem auto;">
+                Subscribe to our newsletter to receive updates about upcoming events and new blog posts.
+            </p>
+            <form style="max-width: 500px; margin: 2rem auto;">
+                <input type="email" placeholder="Enter your email address" required style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 4px;">
+                <button type="submit" class="modal-button" style="width: 100%; margin: 0;">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lekker Organic Farm | Meyerton, Gauteng</p>
+    </footer>
+
+    <!-- Custom Interactive Elements Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

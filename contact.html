@@ -2,15 +2,49 @@
 <html lang="en">
 
 <head>
+    <!-- SEO: Meta Tags and Title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Lekker Organic Farm</title>
+    <title>Contact Us | Lekker Organic Farm - Get in Touch</title>
+    <meta name="description" content="Contact Lekker Organic Farm for organic produce inquiries, orders, and deliveries. Reach us in Meyerton, Gauteng. Free delivery within 50km.">
+    <meta name="keywords" content="contact us, farm location, order organic, delivery inquiries, Meyerton, farm contact">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Contact Us | Lekker Organic Farm">
+    <meta property="og:description" content="Get in touch with Lekker Organic Farm for orders and inquiries">
+    <meta property="og:url" content="https://www.lekkerorganicfarm.com/contact.html">
+    <meta property="og:type" content="website">
+    
+    <!-- SEO: Structured Data (JSON-LD) for Contact Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Lekker Organic Farm",
+        "url": "https://www.lekkerorganicfarm.com/contact.html",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+27-phone-number",
+            "contactType": "Customer Service",
+            "email": "info@lekkerorganicfarm.com",
+            "areaServed": "ZA",
+            "availableLanguage": ["en"]
+        }
+    }
+    </script>
+    
+    <!-- SEO: Canonical Tag -->
+    <link rel="canonical" href="https://www.lekkerorganicfarm.com/contact.html">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
+    <!-- jQuery for interactive elements -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Leaflet CSS for maps -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 </head>
 
 <body>
@@ -21,6 +55,7 @@
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="products.html">Products</a>
+            <a href="events.html">Events</a>
             <a href="enquiry.html">Enquiry</a>
             <a href="contact.html" class="active">Contact</a>
         </nav>
@@ -70,12 +105,20 @@
                 <button type="submit">Send Message</button>
             </form>
         </section>
+
+        <!-- Interactive Map Section -->
+        <section>
+            <h3>Find Us on the Map</h3>
+            <p>Located in the heart of Meyerton, Gauteng. We deliver within a 50km radius of our farm.</p>
+            <div id="farmMap"></div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Lekker Organic Farm</p>
     </footer>
 
-</body>
-
-</html>
+    <!-- Leaflet JS for maps -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <!-- Custom Interactive Elements Script -->
+    <script src="js/script.js"></script>
