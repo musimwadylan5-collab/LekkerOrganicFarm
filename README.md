@@ -92,6 +92,12 @@ Key dates include:
 24 May 2026: Updated the header layout, refined the logo image integration in index.html, and cleaned up CSS comments for code clarity.
 
 29 May 2026: Polished the readme.me file and fixed all refrences. Checked for responsiveness across multiple devices and attached evidence.
+
+19 June 2026: Fixed buggs and altered the css style sheet for better aesthetics. 
+            : Started with the javascripts aspect of the project
+            : Inserted SEO and extra data
+19 June 2026: Ensured the gallery box is added and added more content
+            : Added the map for functional map view            
 ---
 
 ## Device Responsiveness
@@ -122,5 +128,21 @@ Google Fonts, 2019. Open Sans font specimen. Google Fonts, [online font] Availab
 Google Fonts, n.d. Search fonts portal. Google Fonts, [online font] Available at: https://fonts.google.com/ [Accessed 29 May 2026].
 
 Unsplash, 2019. Unsplash photography library. Unsplash, [image online] Available at: https://unsplash.com/images [Accessed 29 May 2026].
+
+Le, T., [s.a.]. Vegetable stand photo. [electronic print] Available at: https://unsplash.com/photos/vegetable-stand-photo-pRJhn4MbsMM [Accessed 22 June 2026].  
+
+Birai, V., 2022. A large pile of green leaves. [electronic print] Available at: https://unsplash.com/photos/a-large-pile-of-green-leaves-pdHbw-kEH_I [Accessed 22 June 2026].  
+
+Tomato mix, 2023. [electronic print] Available at: https://images.unsplash.com/photo-1692736997565-547c794c10e9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dG9tYXRvJTIwbWl4fGVufDB8fDB8fHww [Accessed 22 June 2026].  
+
+Fath, R., [s.a.]. A pile of different types of vegetables on a white surface. [electronic print] Available at: https://unsplash.com/photos/a-pile-of-different-types-of-vegetables-on-a-white-surface-5aJVJvJ9rG8 [Accessed 22 June 2026].  
+
+Gios, J., 2022. A close-up of some cheese. [electronic print] Available at: https://unsplash.com/photos/a-close-up-of-some-cheese-hEyrpAhp9kc [Accessed 22 June 2026].  
+
+A bowl of food that is on a table, [s.a.]. [electronic print] Available at: https://unsplash.com/photos/a-bowl-of-food-that-is-on-a-table-dmusxNBR2hk [Accessed 22 June 2026].  
+
+A bottle of milk, a bottle of milk, and a bottle of milk on a table, [s.a.]. [electronic print] Available at: https://unsplash.com/photos/a-bottle-of-milk-a-bottle-of-milk-and-a-bottle-of-milk-on-a-vEyp-NegA9k [Accessed 22 June 2026].  
+
+pinach bundle, 2022. [electronic print] Available at: https://images.unsplash.com/photo-1668717066198-53148ca2b11b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fFNwaW5hY2glMjBidW5kbGV8ZW58MHx8MHx8fDA%3D [Accessed 22 June 2026].  
  
 ---
